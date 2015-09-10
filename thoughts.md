@@ -6,25 +6,6 @@ I would hope through this site that I could easily find and adopt new ideas to i
 
 User Has many Workouts
 //User has many Feedbacks
-t.string name (your name please)
-t.string password (choose wisely)
-t.string user_photo (this brings authenticity to your posts)
-t.string location ()
-t.string about_me (140 characters) (why trust this workout source)
-t.string current_practice
-
-Workout has many Exercises
-Workout belongs to user
-t.string fitness_goal
-t.datetime estimated_time
-t.string gym_style (apartment, urban gym, professional athletic facility)
-
-exercise belongs to Workout
-each exercise has
-t.string name
-t.string repetitions 
-t.string target_area
-t.string weight
 
 // not sure yet, this is not my vision but I care about helping my friends and this just may not be something I am used to. I can make the experience good enough to change my own behavior too. 
 Feedback belongs to user
