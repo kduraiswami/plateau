@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fitness_goal: MyString
+  estimated_time: 2015-09-09 17:06:14
+  gym_style: MyString
+  references: 
+
+two:
+  fitness_goal: MyString
+  estimated_time: 2015-09-09 17:06:14
+  gym_style: MyString
+  references: 
