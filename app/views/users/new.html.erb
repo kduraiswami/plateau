@@ -7,7 +7,7 @@
 
 		<%= render 'shared/error_messages' %>
 
-		<%= f.label :name %>
+		<%= f.label :name, "Your Name" %>
 		<%= f.text_field :name, class: 'form-control' %>
 
 		<%= f.label :email %>
@@ -16,11 +16,11 @@
 		<%= f.label :location %>
 		<%= f.text_field :location, :placeholder => "City, State", class: 'form-control' %>
 
-		<%= f.label :biography %>
+		<%= f.label :biography, "About me" %>
 		<%= f.text_area :biography, :placeholder => "Write something about your fitness story (max 140 characters)", class: 'form-control' %>
 
 		<%= f.label :current_practice %>
-		<%= f.text_area :current_practice, :placeholder => "e.g. Weightlifting, Boxing, Yoga", class: 'form-control' %>
+		<%= f.text_area :current_practice, :placeholder => "e.g. Weightlifting, Boxing, Yoga, Tennis", class: 'form-control' %>
 
 		<%= f.label :password %>
 		<%= f.password_field :password, :placeholder => "6 characters minimum", class: 'form-control' %>
