@@ -13,6 +13,11 @@ class User < ActiveRecord::Base
 	has_secure_password
 	validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
+	validates :location, presence: true
+	validates :biography, presence: true, length: { maximum: 140}
+	validates :current_practice, presence: true, length: { maximum: 140}
+
+
 	def User.digest(string)
 		cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
 		BCrypt::Engine.cost
