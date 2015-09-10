@@ -1,9 +1,3 @@
-my use case was to search for a work out routine based on what muscles were targeted
-
-I care about expertise of the source, novelty / range of exercises, time, equipment, 
-
-I would hope through this site that I could easily find and adopt new ideas to improve my workouts or build a brand new approach to fitness to overcome stagnation or plateau 
-
 User Has many Workouts
 //User has many Feedbacks
 
@@ -12,14 +6,24 @@ Feedback belongs to user
 Feedback has many comments
 t.string photo or video 
  
- Comments belong to user
- t.string content
- t.datetime posting_date (to sentence or w/e)
+Comments belong to user
+t.string content
+t.datetime posting_date (to sentence or w/e)
 
-When I visit a users page:
+NEXT: 
+
+Design the user show page
+link_to create a workout 
+add column for sets to exercise 
+
+
+
+
+Workflow: 
 I will see a picture to the left
 Beneath this picture I will see the basic information about this person
 (this profile section will resemble github)
+
 to the right of the picture I will see a button link to create a new workout if I am on my page
 on other users the section to the right will show tiled workout summaries displayed in a uniform size
 The summary tile says the goal, estimated time and gym style 
