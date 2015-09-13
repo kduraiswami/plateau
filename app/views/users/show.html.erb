@@ -8,8 +8,13 @@
 			<div class="user_name">
 				<%= @user.name %>
 			</div><hr>
-			<%= @user.location %><br>
-			<%= @user.current_practice%>
+			<i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;<%= @user.location %><br>
+			<i class="fa fa-trophy fa-lg"></i>&nbsp;&nbsp;<%= @user.current_practice%><br><br>
+			<div class="aboutme_title">
+				About Me:
+			</div>
+			<%= @user.biography%>
 		</div>
 	</aside>
+	
 </div>
