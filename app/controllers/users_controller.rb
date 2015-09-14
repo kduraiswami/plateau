@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 		@user = User.new(user_params)
 		if @user.save
 			log_in @user
-			flash[:success] = "Thank you for signing up, please share your daily workout and learn from others"
+			flash[:success] = "Thank you for signing up, please share your daily workouts and learn from others doing the same"
 			redirect_to @user
 		else
 			render 'new'
