@@ -11,11 +11,14 @@ t.string content
 t.datetime posting_date (to sentence or w/e)
 
 NEXT: 
-
-Design the user show page
-link_to create a workout 
-add column for sets to exercise 
-
+can a user successfully reset a password right now
+what is the best about page possible
+how should a user contact me right now with feedback or problems
+what is the display of the blank home page going to include?
+What is the link to create a work out and / or post look like on the home page (blue button for workout, green button for feedback)
+how do I create an embedded youtube player on posts on the site
+Do I need a special syntax for exercise routes that are going to be on the same form as a workout route? 
+What do I want this to be most simply? 
 
 
 
