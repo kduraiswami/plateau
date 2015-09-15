@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :users
   resources :workouts
   resources :exercises
-  resources :password_resets,     only: [:new, :create, :edit, :update]git
+  resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
 
