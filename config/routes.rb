@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get                 'sessions/new'
   get                 'users/new'
   root                'static_pages#home'
@@ -13,6 +17,7 @@ Rails.application.routes.draw do
   resources :users
   resources :workouts
   resources :exercises
+  resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
 
