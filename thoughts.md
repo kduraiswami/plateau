@@ -10,11 +10,9 @@ Comments belong to user
 t.string content
 t.datetime posting_date (to sentence or w/e)
 
-NEXT: 
-
-Design the user show page
-link_to create a workout 
-add column for sets to exercise 
+Two goals - this is my vision
+User can upload their own personal profile picture from device
+User can create a workout 
 
 
 
