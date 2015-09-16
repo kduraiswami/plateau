@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 /* mixins, variables, etc. */
 
@@ -101,7 +102,7 @@ aside {
       padding-top: 0;
     }
     span {
-      display: block;
+      //display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
@@ -118,10 +119,26 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+  width: 230px;
+  height: 230px;
+  border-radius: 3px;
 }
 
 .gravatar_edit {
   margin-top: 15px;
+}
+
+.profile_information{
+  width:230px;
+}
+
+.user_name{
+  font-size: 26px;
+  font-style: bold;
+}
+
+.aboutme_title{
+  font-weight: bold;
 }
 
 /* Forms */

@@ -14,9 +14,6 @@ Two goals - this is my vision
 User can upload their own personal profile picture from device
 User can create a workout 
 
-
-
-
 Workflow: 
 I will see a picture to the left
 Beneath this picture I will see the basic information about this person
