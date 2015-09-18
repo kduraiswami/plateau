@@ -11,8 +11,12 @@ t.string content
 t.datetime posting_date (to sentence or w/e)
 
 Two goals - this is my vision
-User can upload their own personal profile picture from device
-User can create a workout 
+User can upload their own personal profile picture from local device
+
+User can create a workout
+user can see a feed of all workouts created
+
+user can search for workouts by tags (next) 
 
 Workflow: 
 I will see a picture to the left
