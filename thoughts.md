@@ -11,10 +11,15 @@ t.string content
 t.datetime posting_date (to sentence or w/e)
 
 Two goals - this is my vision
-User can upload their own personal profile picture from local device
+User can create a workout, workouts have tags, comments and descriptions
 
-User can create a workout
-user can see a feed of all workouts created
+User can upload their own personal profile picture from local device
+user can see a feed of all workouts created - displaying tags, comments, descriptions
+
+bugs: 
+user logout needs to be fixed 
+upload button should be styled a bit
+image value should not be lost on save / submit, not sure whats happening now
 
 user can search for workouts by tags (next) 
 
