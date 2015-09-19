@@ -15,8 +15,11 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   
   resources :users
-  resources :workouts
-  resources :exercises
+  
+  resources :workouts do 
+    resources :exercises
+  end
+
   resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
