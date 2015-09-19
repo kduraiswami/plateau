@@ -2,6 +2,9 @@ class WorkoutsController < ApplicationController
 
 	before_action :logged_in_user, only: [:create, :destroy]
 
+	def new
+	end
+
 	def create
 		@workout = current_user.workouts.build(workout_params)
 		if @workout.save
