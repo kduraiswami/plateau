@@ -13,12 +13,11 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  get 'create workout' => 'workouts#new'
   
-  resources :users
-  
-  resources :workouts do 
-    resources :exercises
+  resources :users do 
+    resources :workouts do 
+      resources :exercises
+    end
   end
 
   resources :password_resets,     only: [:new, :create, :edit, :update]
