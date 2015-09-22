@@ -14,9 +14,12 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   
-  resources :users
-  resources :workouts
-  resources :exercises
+  resources :users do 
+    resources :workouts do 
+      resources :exercises
+    end
+  end
+
   resources :password_resets,     only: [:new, :create, :edit, :update]
 
 end
