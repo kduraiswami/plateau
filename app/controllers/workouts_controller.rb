@@ -3,6 +3,10 @@ class WorkoutsController < ApplicationController
 	before_action :logged_in_user, only: [:create, :destroy]
 
 	def new
+		p params
+		p "*" * 80
+		@user = current_user
+		@workout = Workout.new
 	end
 
 	def create
