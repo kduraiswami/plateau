@@ -3,7 +3,6 @@ class WorkoutsController < ApplicationController
 	before_action :logged_in_user, only: [:create, :destroy]
 
 	def new
-		@workout = current_user.workouts.build 
 	end
 
 	def create
