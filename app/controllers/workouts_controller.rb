@@ -9,8 +9,9 @@ class WorkoutsController < ApplicationController
 
 	def create
 		@user = current_user
-		@workout = @user.workouts.build(workout_params)
+		@workout = @user.workouts.new(workout_params)
 		p @user.errors.full_messages
+		p @workout.errors.full_messages
 		p "*" * 80
 		if @workout.save
 			flash[:success] = "workout created!"
@@ -28,7 +29,7 @@ class WorkoutsController < ApplicationController
 
 	def workout_params
 		params.require(:workout).permit(:estimated_time,
-			:gym_style, :description, :fitness_goal)
+			:gym_style, :description, :fitness_goal, :user_id)
 	end
 
 end
