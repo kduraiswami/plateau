@@ -10,13 +10,14 @@ class WorkoutsController < ApplicationController
 	def create
 		@user = current_user
 		@workout = @user.workouts.build(workout_params)
-		p "*" *70
-		p @workout.errors.full_messages
+		p @user.errors.full_messages
+		p "*" * 80
 		if @workout.save
 			flash[:success] = "workout created!"
 			redirect_to current_user
 		else
-			render 'static_pages/home'
+			flash[:danger] = "sorry there was an error"
+			redirect_to current_user
 		end
 	end
 
