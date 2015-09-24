@@ -21,6 +21,10 @@ profile picture
 upload button should be styled a bit
 image value should not be lost on save / submit, not sure whats happening now
 
+sessions:
+default page should render users profile page when logged in 
+logged_in_user? method needs to be fixed
+
 Next:
 user can search for workouts by tags 
 
