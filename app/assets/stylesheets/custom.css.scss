@@ -220,3 +220,26 @@ footer {
     }
   }
 }
+
+/* Workout Forms*/
+.workout-form-title{
+  margin-left: 2%;
+}
+
+.workout-description{
+  height: 300px;
+}
+
+.workout-form{
+  width: 40%;
+  display: block;
+  margin-left: 30%;
+}
+  
+.workout-form-control{
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  height: 20px;
+  @include box_sizing;
+}
+

@@ -1,13 +1,18 @@
-<%= form_for([@user, @workout]) do |f|%>
+<div class="workout-form">
+	<%= form_for([@user, @workout]) do |f|%>
 
-	<%= f.label :estimated_time, "Estimated Time"%>
+	<%= f.label :estimated_time, "Estimated Time", class: "workout-form-title"%>&nbsp;<i class="fa fa-clock-o fa-lg"></i>
 	<%= f.text_field :estimated_time, :placeholder => "Target Completion Time", class: "workout-form-control"%>
 
-	<%= f.label :gym_style, "Gym Style (Optional)"%>
-	<%= f.text_field :gym_style, :placeholder => "Apartment Complex Gym, Commercial Gym, Full Athletic Training Facility", class: "workout-form-control" %>
+	<%= f.label :gym_style, "Gym Style (Optional)", class: "workout-form-title"%>
+	<%= f.text_field :gym_style, :placeholder => "Apartment Complex Gym, Full Athletic Training Facility, etc.", class: "workout-form-control" %>
 
-	<%= f.label :fitness_goal, "Fitness Goal"%>
-	<%= f.text_area :fitness_goal, :placeholder => "HIIT, Football, Iron Man Triathlon", class: "workout-form-control"%>
+	<%= f.label :description, "Workout Description", class: "workout-form-title"%>
+	<%= f.text_area :description, class: "workout-description"%>
 
-	<%= f.submit "Add Exercises", class: "btn btn-primary"%>
-<% end %>
+	<%= f.label :fitness_goal, "Fitness Goal", class: "workout-form-title"%>&nbsp;<i class="fa fa-certificate fa-lg"></i>
+	<%= f.text_field :fitness_goal, :placeholder => "HIIT, Football, Iron Man Triathlon", class: "workout-form-control"%>
+
+	<%= f.submit "Create Workout", class: "btn btn-primary"%>
+	<% end %>
+</div>

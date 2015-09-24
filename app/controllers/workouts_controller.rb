@@ -1,10 +1,6 @@
 class WorkoutsController < ApplicationController
 
-	before_action :logged_in_user, only: [:create, :destroy]
-
 	def new
-		p params
-		p "*" * 80
 		@user = current_user
 		@workout = Workout.new
 	end
@@ -25,8 +21,8 @@ class WorkoutsController < ApplicationController
 	private 
 
 	def workout_params
-		params.require(:workout).permit(:fitness_goal, 
-			:estimated_time, :gym_style)
+		params.require(:workout).permit(:estimated_time,
+			:gym_style, :description, :fitness_goal)
 	end
 
 end

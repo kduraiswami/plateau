@@ -1,4 +1,8 @@
 
+Fake some data to display workouts 
+
+
+
 Comments belong to user
 t.string content
 t.datetime posting_date (to sentence or w/e)
@@ -9,11 +13,16 @@ User can upload their own personal profile picture from local device
 user can see a feed of all workouts created - displaying tags, comments, descriptions
 
 bugs: 
+workout form
+why is the workout created not saved, why does the transaction rollback 
+the redirect should be to the profile after creating a workout
+
+profile picture
 upload button should be styled a bit
 image value should not be lost on save / submit, not sure whats happening now
 
 Next:
-user can search for workouts by tags (next) 
+user can search for workouts by tags 
 
 Workflow: 
 I will see a picture to the left
