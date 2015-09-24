@@ -1,15 +1,20 @@
 class WorkoutsController < ApplicationController
 
+	# before_action :logged_in_user
+
 	def new
 		@user = current_user
 		@workout = Workout.new
 	end
 
 	def create
-		@workout = current_user.workouts.build(workout_params)
+		@user = current_user
+		@workout = @user.workouts.build(workout_params)
+		p "*" *70
+		p @workout.errors.full_messages
 		if @workout.save
 			flash[:success] = "workout created!"
-			redirect_to root_url
+			redirect_to current_user
 		else
 			render 'static_pages/home'
 		end
