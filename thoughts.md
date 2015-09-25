@@ -1,10 +1,9 @@
 
 Today:
-lets try to manually save a workout
-Fake some data to display workouts 
+add profile link to menu on its own
+create some real workouts on my own page
 workout user show page with various workouts
 if this is good then the next thing is a show page for each workout
-add profile link to menu on its own
 see how to add trailing texts in forms that is not actually passed as data
 
 
