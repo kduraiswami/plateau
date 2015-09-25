@@ -6,7 +6,6 @@ class Workout < ActiveRecord::Base
   default_scope -> { order(created_at: :desc) }
 
   validates :fitness_goal, presence: true, length: {maximum: 20}
-  validates :estimated_time, presence: true
   # validates :gym_style
 
 end

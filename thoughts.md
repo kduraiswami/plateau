@@ -4,6 +4,9 @@ lets try to manually save a workout
 Fake some data to display workouts 
 workout user show page with various workouts
 if this is good then the next thing is a show page for each workout
+add profile link to menu on its own
+see how to add trailing texts in forms that is not actually passed as data
+
 
 Two goals - this is my vision
 User can create a workout with long text description, workouts have tags, comments and descriptions
