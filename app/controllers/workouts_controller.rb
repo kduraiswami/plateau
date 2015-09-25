@@ -29,7 +29,7 @@ require 'pry'
 	private 
 
 	def workout_params
-		params.require(:workout).permit(:estimated_time,
+		params.require(:workout).permit(:workout_time,
 			:gym_style, :description, :fitness_goal, :user_id)
 	end
 
