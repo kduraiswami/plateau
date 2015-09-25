@@ -10,23 +10,23 @@
 		<%= f.label :name, "Your Name" %>
 		<%= f.text_field :name, class: 'form-control' %>
 
-		<%= f.label :email %>
+		<%= f.label :email %>&nbsp;<i class="fa fa-envelope-o"></i>
 		<%= f.email_field :email, class: 'form-control' %>
 
-		<%= f.label :location %>
-		<%= f.text_field :location, :placeholder => "City, State", class: 'form-control' %>
+		<%= f.label :location %>&nbsp;<i class="fa fa-globe fa-lg"></i>&nbsp;(City, State)
+		<%= f.text_field :location, class: 'form-control' %>
 
-		<%= f.label :biography, "About me" %>
-		<%= f.text_area :biography, :placeholder => "Tweet-sized comment about your fitness story (max 140 characters)", class: 'form-control' %>
+		<%= f.label :biography, "About me" %>&nbsp;Tweet-sized (140 characters)!
+		<%= f.text_area :biography, class: 'form-control' %>
 
-		<%= f.label :current_practice %>
-		<%= f.text_area :current_practice, :placeholder => "e.g. Weightlifting, Boxing, Yoga, Tennis", class: 'form-control' %>
+		<%= f.label :current_practice %> (Weightlifting, Boxing, Yoga, whatever you like)
+		<%= f.text_area :current_practice, class: 'form-control' %>
 
 		<%= f.label :password %>
 		<%= f.password_field :password, :placeholder => "6 characters minimum", class: 'form-control' %>
 
 		<%= f.label :password_confirmation, "Confirmation" %>
-		<%= f.password_field :password_confirmation, class: 'form-control' %>
+		<%= f.password_field :password_confirmation, :placeholder => "confirm password", class: 'form-control' %>
 		
 		<%= f.submit "Create Account", class: "btn btn-primary" %>
 		<% end %>
