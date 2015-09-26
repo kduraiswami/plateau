@@ -1,6 +1,5 @@
 class WorkoutsController < ApplicationController
-require 'pry'
-	# before_action :logged_in_user
+	before_action :logged_in_user
 
 	def new
 		@user = current_user
@@ -10,10 +9,6 @@ require 'pry'
 	def create
 		@user = current_user
 		@workout = @user.workouts.build(workout_params)
-		p @user.errors.full_messages
-		p @workout.errors.full_messages
-		p "*" * 80
-		pry
 		if @workout.save!
 			flash[:success] = "workout created!"
 			redirect_to current_user
