@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150925031254) do
+ActiveRecord::Schema.define(version: 20150926222107) do
 
   create_table "exercises", force: :cascade do |t|
     t.string   "name"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20150925031254) do
     t.string   "reset_digesst"
     t.string   "reset_sent_at"
     t.string   "datetime"
+    t.string   "profile"
   end
 
   create_table "workout_tags", force: :cascade do |t|
