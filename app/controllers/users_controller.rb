@@ -19,7 +19,8 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-		if @user.save
+		p user_params
+		if @user.save!
 			log_in @user
 			flash[:success] = "Thank you for signing up, please share your daily workouts and learn from others doing the same"
 			redirect_to @user
@@ -52,7 +53,7 @@ class UsersController < ApplicationController
 
 	def user_params
 		params.require(:user).permit(:name, :email, :password,
-			:password_confirmation, :location, :biography, :current_practice)
+			:password_confirmation, :location, :biography, :current_practice, :profile)
 	end
 
 	def logged_in_user

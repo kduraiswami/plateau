@@ -2,7 +2,7 @@
 <div class="row">
 	<aside class="col-md-4">
 		<section class="user_info">
-			<%= gravatar_for @user %>
+			<%= image_tag(@user.profile.url) %>
 		</section>
 		<div class="profile_information">
 			<div class="user_name">

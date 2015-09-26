@@ -1,8 +1,12 @@
+require 'carrierwave'
+
 class User < ActiveRecord::Base
-	
+
 	has_many :workouts
 	
 	attr_accessor :remember_token, :reset_token
+
+	mount_uploader :profile, ProfileUploader
 
 	before_save   :downcase_email
 	validates :name,  presence: true, length: { maximum: 50 }
