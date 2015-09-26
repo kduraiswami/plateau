@@ -1,5 +1,7 @@
+require 'carrierwave'
+
 class User < ActiveRecord::Base
-	
+
 	has_many :workouts
 	
 	attr_accessor :remember_token, :reset_token
