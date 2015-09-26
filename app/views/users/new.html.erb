@@ -22,6 +22,9 @@
 		<%= f.label :current_practice %> (Weightlifting, Boxing, Yoga, whatever you like)
 		<%= f.text_area :current_practice, class: 'form-control' %>
 
+		<%= f.label :profile, "Upload Profile"%>
+		<%= f.file_field :profiles %>
+
 		<%= f.label :password %>
 		<%= f.password_field :password, :placeholder => "6 characters minimum", class: 'form-control' %>
 
