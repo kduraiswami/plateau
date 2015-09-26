@@ -1,6 +1,5 @@
 class WorkoutsController < ApplicationController
-require 'pry'
-	# before_action :logged_in_user
+	before_action :logged_in_user
 
 	def new
 		@user = current_user

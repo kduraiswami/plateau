@@ -19,7 +19,6 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-		p user_params
 		if @user.save!
 			log_in @user
 			flash[:success] = "Thank you for signing up, please share your daily workouts and learn from others doing the same"
