@@ -143,9 +143,15 @@ aside {
 
 /* No Workout */
 .no-workout-container{
-  border: 1px solid gray-light;
+  border: 1px solid black;
+  text-align: center;
+  padding: 100px;
+  margin-top: 15%;
 }
 
+.no-workout-suggestion{
+  font-size: 22px;
+}
 
 /* Forms */
 
