@@ -1,9 +1,10 @@
 
 Today:
-create some real workouts on my own page
+create a partial if user has no workouts
+create yesterday and today workouts on my own page
 workout user show page with various workouts
 if this is good then the next thing is a show page for each workout
-see how to add trailing texts in forms that is not actually passed as data
+see how to add trailing texts in forms
 
 
 Two goals - this is my vision
