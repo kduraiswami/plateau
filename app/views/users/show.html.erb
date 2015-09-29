@@ -19,4 +19,15 @@
 	
 	<%= link_to 'Build A Workout', new_user_workout_path(@user), class: "btn btn-lg"%>
 
+	<div class = "workout-display-container">
+		<% if @workouts.exists? %>
+		<%= @workouts.each do |individual_workout| %>
+		<ul>
+			<li class="individual-workout"><%individual_workout%></li>	
+		</ul>
+		<%= end %>
+		<% else %>
+		<% render shared/noworkout.html.erb%>
+	</div>
+
 </div>
