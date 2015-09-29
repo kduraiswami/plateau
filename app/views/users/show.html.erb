@@ -18,22 +18,14 @@
 	</aside>
 
 	<aside class = "col-md-6">
-		<%= link_to 'Build A Workout', new_user_workout_path(@user), class: "btn btn-lg"%>
-		<div class = "workout-display-container">
+		<% if @user == current_user%>
+		<%= link_to 'Build Your Workout', new_user_workout_path(current_user), class: "btn btn-lg"%>
+		<%end%>
 			<% if @workouts.exists? %>
-				<%= @workouts.each do |individual_workout| %>
-				<ul>
-					<div class="individual-workout">
-						<%individual_workout.fitness_goal%>
-						<%individual_workout.estimated_time%>
-						<%= link_to(individual_workout)%>
-					</div>	
-				</ul>
-			<% end %>
+				<%= render 'layouts/workoutlist.html.erb'%>
 			<%else%>
-			<%= render 'layouts/noworkout.html.erb'%>
+				<%= render 'layouts/noworkout.html.erb'%>
 			<%end%>
-		</div>
 	</aside>
 	
 
