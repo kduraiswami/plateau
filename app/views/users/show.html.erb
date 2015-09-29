@@ -16,24 +16,25 @@
 			<%= @user.biography%>
 		</div>
 	</aside>
+
+	<aside class = "col-md-6">
+		<%= link_to 'Build A Workout', new_user_workout_path(@user), class: "btn btn-lg"%>
+		<div class = "workout-display-container">
+			<% if @workouts.exists? %>
+				<%= @workouts.each do |individual_workout| %>
+				<ul>
+					<div class="individual-workout">
+						<%individual_workout.fitness_goal%>
+						<%individual_workout.estimated_time%>
+						<%= link_to(individual_workout)%>
+					</div>	
+				</ul>
+			<% end %>
+			<%else%>
+			<%= render 'layouts/noworkout.html.erb'%>
+			<%end%>
+		</div>
+	</aside>
 	
-	<%= link_to 'Build A Workout', new_user_workout_path(@user), class: "btn btn-lg"%>
-
-	<div class = "workout-display-container">
-		<% if @workouts.exists? %>
-		<%= @workouts.each do |individual_workout| %>
-		<ul>
-			<div class="individual-workout">
-				<%individual_workout.fitness_goal%>
-				<%individual_workout.estimated_time%>
-				<%= link_to(individual_workout)%>
-			</div>	
-		</ul>
-		<% end %>
-		<%else%>
-		<%= render 'layouts/noworkout.html.erb'%>
-		<%end%>
-	</div>
-
 
 </div>
