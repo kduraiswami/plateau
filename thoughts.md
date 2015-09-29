@@ -16,10 +16,9 @@ t.string content
 t.datetime posting_date (to sentence or w/e)
 
 bugs: 
-workout form
-
-profile picture
-upload button should be styled a bit
+user should only see create workout link on their own page / create workout id comes from logged in user
+picture upload button should be styled a bit
+edit page should allow for picture upload
 
 sessions:
 default page should render users profile page when logged in 
