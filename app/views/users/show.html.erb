@@ -23,11 +23,17 @@
 		<% if @workouts.exists? %>
 		<%= @workouts.each do |individual_workout| %>
 		<ul>
-			<li class="individual-workout"><%individual_workout%></li>	
+			<div class="individual-workout">
+				<%individual_workout.fitness_goal%>
+				<%individual_workout.estimated_time%>
+				<%= link_to(individual_workout)%>
+			</div>	
 		</ul>
-		<%= end %>
-		<% else %>
-		<% render shared/noworkout.html.erb%>
+		<% end %>
+		<%else%>
+		<% render 'layouts/noworkout.html.erb'%>
+		<%end%>
 	</div>
+
 
 </div>
