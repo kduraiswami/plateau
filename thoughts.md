@@ -18,6 +18,7 @@ bugs:
 user should only see create workout link on their own page / create workout id comes from logged in user
 picture upload button could be styled a bit
 users index page needs to render - this is critical
+fix empty workout display thing
 
 sessions:
 default get page should render users profile page when logged in 
