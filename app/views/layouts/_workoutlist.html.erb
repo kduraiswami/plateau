@@ -1,0 +1,11 @@
+<div class = "workout-display-container">
+	<%= @workouts.each do |individual_workout| %>
+	<ul>
+		<div class="individual-workout">
+			<%individual_workout.fitness_goal%>
+			<%individual_workout.estimated_time%>
+			<%= link_to(individual_workout)%>
+		</div>	
+	</ul>
+	<% end %>
+</div>
