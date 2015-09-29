@@ -1,10 +1,10 @@
 
-Today:
-style new workout button
+Next:
 workout user show page with various workouts
-if this is good then the next thing is a show page for each workout
-settings gear in menu
-create yesterday and today workouts on my own page in heroku
+show page for each workout
+create my last few workouts on my own page in heroku
+picture upload button could be styled a bit
+users index page needs to render - this is critical
 
 Two goals - this is my vision
 User can create a workout with long text description, workouts have tags, comments and descriptions
@@ -15,10 +15,6 @@ t.string content
 t.datetime posting_date (to sentence or w/e)
 
 bugs: 
-user should only see create workout link on their own page / create workout id comes from logged in user
-picture upload button could be styled a bit
-users index page needs to render - this is critical
-fix empty workout display thing
 
 sessions:
 default get page should render users profile page when logged in 
