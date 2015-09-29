@@ -1,11 +1,10 @@
 
 Today:
-create a partial if user has no workouts
-create yesterday and today workouts on my own page
+style new workout button
 workout user show page with various workouts
 if this is good then the next thing is a show page for each workout
-see how to add trailing texts in forms
-
+settings gear in menu
+create yesterday and today workouts on my own page in heroku
 
 Two goals - this is my vision
 User can create a workout with long text description, workouts have tags, comments and descriptions
@@ -18,10 +17,10 @@ t.datetime posting_date (to sentence or w/e)
 bugs: 
 user should only see create workout link on their own page / create workout id comes from logged in user
 picture upload button could be styled a bit
+users index page needs to render - this is critical
 
 sessions:
-default page should render users profile page when logged in 
-logged_in_user? method needs to be fixed
+default get page should render users profile page when logged in 
 
 Next:
 user can search for workouts by tags 
