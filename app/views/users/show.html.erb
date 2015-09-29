@@ -16,7 +16,20 @@
 			<%= @user.biography%>
 		</div>
 	</aside>
+
+	<aside class = "col-md-6">
+		<% if @user == current_user%>
+		<%= link_to 'Build A Workout', new_user_workout_path(current_user), class: "workout-button btn btn-lg"%>	
+		<%end%>
+
+		<% if !@user.workouts.blank?%>
+		<%= render 'layouts/workoutlist.html.erb'%>
+		<%end%>
+
+		<% if @workouts.blank? && @user == current_user%>
+			<%= render 'layouts/noworkout.html.erb'%>
+		<%end%>
+	</aside>
 	
-	<%= link_to 'Build A Workout', new_user_workout_path(@user), class: "btn btn-lg"%>
 
 </div>
