@@ -12,7 +12,7 @@
 			<%= "Target Time: #{individual_workout.workout_time}"%>
 		</div>
 		<div class="individual-workout-link">
-			<%link_to "View Workout", user_workout_path(individual_workout)%>
+			<%=link_to "View Workout", user_workout_path(@user,individual_workout)%>
 		</div>
 	</div>	
 	<% end %>
