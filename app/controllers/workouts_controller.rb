@@ -20,6 +20,8 @@ class WorkoutsController < ApplicationController
 	end
 
 	def show
+		@user = User.find(params[:user_id])
+		@workout = Workout.find(params[:id])
 	end 
 		
 	def destroy
