@@ -1,7 +1,7 @@
 
 Next:
-workout user show page with various workouts
-show page for each workout
+workouts on user show page with various workouts
+show page for each workout - with comments
 create my last few workouts on my own page in heroku
 picture upload button could be styled a bit
 users index page needs to render - this is critical
