@@ -1,0 +1,43 @@
+<div class = "workout-show-container">
+	<div class="workout-show-field workout-show-time-field">
+		<div class="workout-show-header">
+			Estimated Time:
+		</div>
+		<div class="workout-show-workout-time">
+			<%= @workout.workout_time%>
+		</div>
+	</div>
+
+	<div class="horizontal-fields-container">
+
+		<div class="workout-show-field workout-show-fitness-goal">
+			<div class="workout-show-header">
+				Fitness Goal:
+			</div>
+			<div class="workout-show-fitness-goal-field">
+				<%= @workout.fitness_goal%>
+			</div>
+		</div>
+
+		<div class="workout-show-field workout-show-gym-style">
+			<div class="workout-show-header">
+				Gym Style:
+			</div>
+			<div class="workout-show-gym-style-field">
+				<%= @workout.gym_style %>
+			</div>
+		</div><hr>
+
+	</div>
+	<div class="workout-show-field">
+		<div class="workout-show-header">
+			Workout:
+		</div>
+		<div class="workout-show-description">
+			<%= @workout.description%>
+		</div>
+	</div>
+
+
+	
+</div>

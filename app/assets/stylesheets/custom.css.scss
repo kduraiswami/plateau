@@ -182,14 +182,19 @@ aside {
 
 .individual-fitness-goal{
   display: inline-block;
-  font-size: 22px;
-  margin-left: 6%;
+  font-size: 15px;
+  margin-left: 3%;
 }
 
 .individual-workout-time{
   display: inline-block;
-  font-size: 18px;
-  margin-left: 11%;
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+.individual-workout-link{
+  display: inline-block;
+  margin-left: 6%;
 }
 
 
@@ -271,6 +276,44 @@ footer {
       margin-left: 15px;
     }
   }
+}
+/*Workout show*/
+
+.workout-show-container{
+  width: 40%;
+  display: block;
+  margin-left: 30%;
+  margin-top: 1%;
+  background-color: #F8F8F8;
+  border: 1px solid black;
+  padding: 5% 6%;
+  border-radius: 5%;
+}
+
+.workout-show-header{
+  font-weight: bold;
+}
+
+.workout-show-field{
+  margin: 1%
+}
+
+.workout-show-time-field{
+  text-align: center;
+}
+
+.workout-show-fitness-goal{
+  display: inline-block;
+  margin: 2%;
+}
+
+.workout-show-gym-style{
+  display: inline-block;
+  margin-left: 20%;
+}
+
+.horizontal-fields-container{
+  text-align: center;
 }
 
 /* Workout Forms*/
