@@ -19,6 +19,9 @@ class WorkoutsController < ApplicationController
 		end
 	end
 
+	def show
+	end 
+		
 	def destroy
 	end
 
