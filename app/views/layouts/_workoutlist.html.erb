@@ -1,11 +1,19 @@
+
+<div class="individual-workout-username">
+	<%= "#{@user.name}'s workouts!" %>
+</div>
 <div class = "workout-display-container">
-	<%= @workouts.each do |individual_workout| %>
-	<ul>
-		<div class="individual-workout">
-			<%individual_workout.fitness_goal%>
-			<%individual_workout.estimated_time%>
-			<%= link_to(individual_workout)%>
-		</div>	
-	</ul>
+	<% @workouts.each do |individual_workout| %>
+	<div class="individual-workout">
+		<div class="individual-fitness-goal">
+			<%= "Fitness Goal: #{individual_workout.fitness_goal}"%>
+		</div>
+		<div class="individual-workout-time">
+			<%= "Target Time: #{individual_workout.workout_time}"%>
+		</div>
+		<div class="individual-workout-link">
+			<%link_to "View Workout", user_workout_path(individual_workout)%>
+		</div>
+	</div>	
 	<% end %>
 </div>
