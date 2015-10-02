@@ -2,11 +2,10 @@
 I am inviting users sunday afternoon at 3pm PST no matter what. 
 
 Next:
-users index page needs to render - this is critical
 comments on workout
 create my last few workouts on my own page in heroku - set a programmatic example
 
-have a nice explanation of site an on boarding experience - this should take the remainder of your time. Assume very few will use it once and almost no one will use it twice, make it extremely intuitive. 
+have a nice explanation of site and on boarding experience - this should take the remainder of your time. Assume very few will use it once and almost no one will use it twice, make it extremely intuitive. 
 
 A styling guide with syntax rules for creating workouts:
 
