@@ -1,8 +1,17 @@
 <li>
-	<%= gravatar_for user, size: 50 %>
-	<%= link_to user.name, user %>
-	<% if current_user.admin? && !current_user?(user) %>
-	| <%= link_to "delete", user, method: :delete,
-	data: { confirm: "You sure?" } %>
-	<% end %>
+	<div class="user-index-container">
+		<div class="user-index-content">
+			<div class="user-index-profile-picture">
+				<%= link_to image_tag(user.profile.url), user%>
+			</div>
+			<ul class="user-index-information">
+				<li><%= link_to user.name, user %></li>
+				<li><i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;<%=user.location %></li>
+				<li><i class="fa fa-trophy fa-lg"></i>&nbsp;&nbsp;<%=user.current_practice%></li>
+				<div class="user-index-about-me">
+					<li>About Me: <%=user.biography%></li>
+				</div>
+			</ul>
+		</div>
+	</div>	
 </li>
