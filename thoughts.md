@@ -2,12 +2,10 @@
 I am inviting users sunday afternoon at 3pm PST no matter what. 
 
 Today: 
-I need to definitly remove content from the style guide
-I need to center the divs of the workout contents on their own
-If needed I will break this up into different pages
-If I give this to other hackers or tech people they will appreciate hard rules, I would.
-Hackers that exercise 
-
+do a critical walkthrough - create onboarding and links
+deploy to heroku
+create some workouts
+send out the link to friends
 
 Next:
 comments on workout
