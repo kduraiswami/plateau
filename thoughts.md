@@ -1,6 +1,12 @@
 
 I am inviting users sunday afternoon at 3pm PST no matter what. 
 
+Today: 
+do a critical walkthrough - create onboarding and links
+deploy to heroku
+create some workouts
+send out the link to friends
+
 Next:
 comments on workout
 create my last few workouts on my own page in heroku - set a programmatic example
@@ -8,9 +14,7 @@ create my last few workouts on my own page in heroku - set a programmatic exampl
 have a nice explanation of site and on boarding experience - this should take the remainder of your time. Assume very few will use it once and almost no one will use it twice, make it extremely intuitive. 
 
 Styleguide: 
-I need to definitly remove content from the style guide
-I need to center the divs of the workout contents on their own
-I will be better off with a left side navigation bar and breaking things into 5 pages
+
 
 On Boarding:
 The best on boarding would be examples to point to that are easy to understand and immediately actionable/effective
