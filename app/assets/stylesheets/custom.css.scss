@@ -334,10 +334,10 @@ footer {
 /*Workout show*/
 
 .workout-show-container{
-  width: 40%;
+  width: 60%;
   display: block;
-  margin-left: 30%;
-  margin-top: 1%;
+  margin-left: 20%;
+  margin-top: 5%;
   background-color: #F8F8F8;
   border: 1px solid black;
   padding: 5% 6%;
@@ -371,6 +371,10 @@ footer {
 }
 
 /* Workout Forms*/
+.workout-form-instructions{
+  width:50%;
+  margin-left:25%;
+}
 .workout-form-title{
   margin-left: 2%;
 }
