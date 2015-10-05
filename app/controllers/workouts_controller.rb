@@ -10,7 +10,7 @@ class WorkoutsController < ApplicationController
 	def create
 		@user = current_user
 		@workout = @user.workouts.build(workout_params)
-		if @workout.save!
+		if @workout.save
 			flash[:success] = "workout created!"
 			redirect_to current_user
 		else
