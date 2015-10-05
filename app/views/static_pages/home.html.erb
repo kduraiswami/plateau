@@ -1,6 +1,10 @@
 <h1>Plateau</h1>
-<p>Please use this site to post workouts and help others improve their workout routines</p>
+<div class="home-content">
+	Use this site to post workouts and help others improve their workout routines. Take a look at the <%= link_to "Plateau Style Guide", styleguide_path %> to check out how to build workouts on this site. Create an account to share your workouts and see what other people are creating to improve your workout results.
+	<br>
+	<br>
+	<% unless logged_in?%>
+	<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+	<%end%>
+</div>
 
-<% unless logged_in?%>
-<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-<%end%>

@@ -1,13 +1,18 @@
+<h2>New Workout:</h2>
+<div class="workout-form-instructions">
+	Use this form to create your workout to share with everyone. Please feel free to use the Plateau syntax from the <%=link_to "Style Guide", styleguide_path%> and guidance from other members for how to share your idea!
+</div>
+<br>
 <div class="workout-form">
 	<%= form_for([@user, @workout]) do |f|%>
 
-	<%= f.label :workout_time, "Workout Time", class: "workout-form-title"%>&nbsp;<i class="fa fa-clock-o fa-lg"></i>&nbsp;(estimated time to completion)
+	<%= f.label :workout_time, "Workout Time", class: "workout-form-title"%>&nbsp;<i class="fa fa-clock-o fa-lg"></i>&nbsp;(estimated time for completion)
 	<%= f.text_field :workout_time, class: "workout-form-control"%>
 
 	<%= f.label :gym_style, "Gym Style", class: "workout-form-title"%>&nbsp;(Apartment Gym, Full Athletic Training Facility, etc.)
 	<%= f.text_field :gym_style, class: "workout-form-control" %>
 
-	<%= f.label :description, "Workout Description", class: "workout-form-title"%> [example]
+	<%= f.label :description, "Workout Instructions", class: "workout-form-title"%> <%= link_to "Style Guide", styleguide_path%>
 	<%= f.text_area :description, class: "workout-description"%>
 
 	<%= f.label :fitness_goal, "Fitness Goal", class: "workout-form-title"%>&nbsp;<i class="fa fa-certificate fa-lg"></i>&nbsp;(HIIT, Boxing, Iron Man, etc)
