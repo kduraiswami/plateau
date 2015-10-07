@@ -1,6 +1,6 @@
 class WorkoutsController < ApplicationController
 	
-	before_action :logged_in_user
+	before_action :logged_in_user, only: [:destroy]
 
 	def new
 		@user = current_user

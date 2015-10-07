@@ -1,9 +1,5 @@
 
 Today: 
-remove log in logic to view other profiles and workouts
-only keep login for creating workouts
-
-
 Nested Routes for:
 comments on workout
 upload video or photo to a workout
