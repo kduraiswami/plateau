@@ -1,11 +1,8 @@
 
-Today: 
-Nested Routes for:
-comments on workout
-upload video or photo to a workout
+I am committed to figuring out the nested routes for creating comments on workouts first. has_many_through? I will try my best on this tomorrow
 
-Next:
-Edit workouts
+Then I will create nested routes to ask for feedback on a particular workout or exercise
+
 
 polish:
 there are opportunities to include Font Awesome on the workout show page
